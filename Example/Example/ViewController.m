@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "TopView.h"
 
 @interface ViewController ()
 
@@ -16,6 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    CGRect rect = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height*0.382);
+    TopView *topView = [[TopView alloc]initWithFrame:rect];
+    topView.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:topView];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
