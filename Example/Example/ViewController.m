@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "TopView.h"
 #import "MyCollectionViewCell.h"
+#import "BottomVIew.h"
 
 @interface ViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 @property (strong,nonatomic)UICollectionView *collectionView;
@@ -91,6 +92,18 @@
     [self.collectionView registerClass:[MyCollectionViewCell class] forCellWithReuseIdentifier:@"cellIdentifier"];
     
     [self.view addSubview:self.collectionView];//导航页
+    
+    CGRect bottomRect = CGRectMake(0, self.view.frame.size.height-80, self.view.frame.size.width, 80);
+    UIImage *bottomImage = [UIImage imageNamed:@"fh.png"];
+    NSArray *imageArray = [NSArray array];
+    imageArray = @[bottomImage,bottomImage,bottomImage,bottomImage,bottomImage];
+    BottomVIew *bottomView = [[BottomVIew alloc]init];
+    [bottomView drawBottomView:bottomRect ImageArray:imageArray];
+    [self.view addSubview:bottomView];//bottom栏
+    
+    UIView *bottomUpLine = [[UIView alloc]initWithFrame:CGRectMake(0, self.view.frame.size.height-79, self.view.frame.size.width, 1)];
+    bottomUpLine.backgroundColor = [UIColor blackColor];
+    [self.view addSubview:bottomUpLine];
     // Do any additional setup after loading the view, typically from a nib.
 }
 

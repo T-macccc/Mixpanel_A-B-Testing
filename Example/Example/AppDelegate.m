@@ -16,6 +16,25 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+//    self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
+//    
+//    ViewController *viewController = [ViewController new];
+//    viewController.title = @"viewC";
+//    
+//    MainViewController *mainViewController = [MainViewController new];
+//    mainViewController.title = @"mainC";
+//
+//    SelectViewController *selectViewController = [SelectViewController new];
+//    selectViewController.title = @"selectC";
+//    
+//    self.tabBarController = [UITabBarController new];
+//    self.tabBarController.delegate = self;
+//    self.tabBarController.viewControllers = [NSArray arrayWithObjects:viewController,mainViewController,selectViewController, nil];
+//    
+//    self.window.rootViewController = self.tabBarController;
+//    [self.window makeKeyAndVisible];
+    
     // Override point for customization after application launch.
     return YES;
 }
