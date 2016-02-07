@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1898B1DB1C65D6B0004D2E16 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1898B1DA1C65D6B0004D2E16 /* MainViewController.m */; };
 		1898B1DE1C65D6BD004D2E16 /* SelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1898B1DD1C65D6BD004D2E16 /* SelectViewController.m */; };
-		1898B1E11C65DB6E004D2E16 /* BottomVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = 1898B1E01C65DB6E004D2E16 /* BottomVIew.m */; };
 		2F6F8D341C6443C50027F5E9 /* TopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F8D331C6443C50027F5E9 /* TopView.m */; };
 		2F6F8D361C644B4B0027F5E9 /* search_press@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F6F8D351C644B4B0027F5E9 /* search_press@2x.png */; };
 		2F6F8D491C647DCF0027F5E9 /* 1159.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F6F8D371C647DCF0027F5E9 /* 1159.png */; };
@@ -62,8 +61,6 @@
 		1898B1DA1C65D6B0004D2E16 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		1898B1DC1C65D6BD004D2E16 /* SelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectViewController.h; sourceTree = "<group>"; };
 		1898B1DD1C65D6BD004D2E16 /* SelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectViewController.m; sourceTree = "<group>"; };
-		1898B1DF1C65DB6E004D2E16 /* BottomVIew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottomVIew.h; sourceTree = "<group>"; };
-		1898B1E01C65DB6E004D2E16 /* BottomVIew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottomVIew.m; sourceTree = "<group>"; };
 		2F6F8D321C6443C50027F5E9 /* TopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopView.h; sourceTree = "<group>"; };
 		2F6F8D331C6443C50027F5E9 /* TopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopView.m; sourceTree = "<group>"; };
 		2F6F8D351C644B4B0027F5E9 /* search_press@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search_press@2x.png"; sourceTree = "<group>"; };
@@ -186,8 +183,6 @@
 				1898B1DA1C65D6B0004D2E16 /* MainViewController.m */,
 				1898B1DC1C65D6BD004D2E16 /* SelectViewController.h */,
 				1898B1DD1C65D6BD004D2E16 /* SelectViewController.m */,
-				1898B1DF1C65DB6E004D2E16 /* BottomVIew.h */,
-				1898B1E01C65DB6E004D2E16 /* BottomVIew.m */,
 				2F6F8D321C6443C50027F5E9 /* TopView.h */,
 				2F6F8D331C6443C50027F5E9 /* TopView.m */,
 				2F6F8D5E1C6490DA0027F5E9 /* MyCollectionViewCell.h */,
@@ -385,7 +380,6 @@
 				2FE0B6FA1C6341D400BEB580 /* main.m in Sources */,
 				1898B1DB1C65D6B0004D2E16 /* MainViewController.m in Sources */,
 				2F6F8D601C6490DA0027F5E9 /* MyCollectionViewCell.m in Sources */,
-				1898B1E11C65DB6E004D2E16 /* BottomVIew.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

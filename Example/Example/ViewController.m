@@ -9,7 +9,6 @@
 #import "ViewController.h"
 #import "TopView.h"
 #import "MyCollectionViewCell.h"
-#import "BottomVIew.h"
 
 @interface ViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 @property (strong,nonatomic)UICollectionView *collectionView;
@@ -97,14 +96,82 @@
     UIImage *bottomImage = [UIImage imageNamed:@"fh.png"];
     NSArray *imageArray = [NSArray array];
     imageArray = @[bottomImage,bottomImage,bottomImage,bottomImage,bottomImage];
-    BottomVIew *bottomView = [[BottomVIew alloc]init];
-    [bottomView drawBottomView:bottomRect ImageArray:imageArray];
-    [self.view addSubview:bottomView];//bottom栏
     
     UIView *bottomUpLine = [[UIView alloc]initWithFrame:CGRectMake(0, self.view.frame.size.height-79, self.view.frame.size.width, 1)];
     bottomUpLine.backgroundColor = [UIColor blackColor];
-    [self.view addSubview:bottomUpLine];
+    [self.view addSubview:bottomUpLine];//bottom线
+    
+    [self drawBottomView:bottomRect ImageArray:imageArray];//bottom栏
+    
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)drawBottomView:(CGRect)rect ImageArray:(NSArray *)imageArray {
+    
+    CGFloat selfWidth = rect.size.width/5.0;
+    CGFloat selfHeight = rect.size.height;
+    CGRect zeroRect = CGRectMake(rect.origin.x, rect.origin.y, selfWidth, selfHeight);
+    for (int i = 0; i<5; i++) {
+        CGRect nowRect = CGRectMake(zeroRect.origin.x+selfWidth*i, zeroRect.origin.y, selfWidth, selfHeight);
+        [self drawPieceView:nowRect image:imageArray[i] num:i];
+        
+    }
+}
+
+- (void)drawPieceView:(CGRect)rect image:(UIImage *)image num:(int)num{
+    CGFloat selfWidth = rect.size.width;
+    CGFloat selfHeight = rect.size.height;
+    CGPoint selfPoint = rect.origin;
+    
+    CGRect imageRect = CGRectMake(selfPoint.x+(selfWidth-50)/2.0,selfPoint.y+(selfHeight-50)/2.0, 50, 50);
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.frame = imageRect;
+    [button setImage:image forState:UIControlStateNormal];
+    button.backgroundColor = [UIColor yellowColor];
+    
+    if (num == 0)
+    {
+        [button addTarget:self action:@selector(methodOne) forControlEvents:UIControlEventTouchUpInside];
+    }
+    else if (num == 1)
+    {
+        [button addTarget:self action:@selector(methodTwo) forControlEvents:UIControlEventTouchUpInside];
+    }
+    else if (num == 2)
+    {
+        [button addTarget:self action:@selector(methodThree) forControlEvents:UIControlEventTouchUpInside];
+    }
+    else if (num == 3)
+    {
+        [button addTarget:self action:@selector(methodFour) forControlEvents:UIControlEventTouchUpInside];
+    }
+    else
+    {
+        [button addTarget:self action:@selector(methodFive) forControlEvents:UIControlEventTouchUpInside];
+    }
+    [self.view addSubview:button];
+}
+
+
+-(void)methodOne{
+    NSLog(@"one");
+}
+
+-(void)methodTwo{
+    NSLog(@"two");
+}
+
+-(void)methodThree{
+    NSLog(@"three");
+}
+
+-(void)methodFour{
+    NSLog(@"four");
+}
+
+-(void)methodFive{
+    NSLog(@"five");
 }
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
