@@ -18,8 +18,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
 //    self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
-//    
-//    ViewController *viewController = [ViewController new];
+//
 //    viewController.title = @"viewC";
 //    
 //    MainViewController *mainViewController = [MainViewController new];

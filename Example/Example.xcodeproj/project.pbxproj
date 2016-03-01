@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1867F7F61C72335A000B7793 /* GregBackgroundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1867F7F51C72335A000B7793 /* GregBackgroundViewController.m */; };
 		1898B1DB1C65D6B0004D2E16 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1898B1DA1C65D6B0004D2E16 /* MainViewController.m */; };
 		1898B1DE1C65D6BD004D2E16 /* SelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1898B1DD1C65D6BD004D2E16 /* SelectViewController.m */; };
+		18FD6C401C84A91000B9BF44 /* FirstWebViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FD6C3F1C84A91000B9BF44 /* FirstWebViewC.m */; };
 		2F6F8D341C6443C50027F5E9 /* TopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F8D331C6443C50027F5E9 /* TopView.m */; };
 		2F6F8D361C644B4B0027F5E9 /* search_press@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F6F8D351C644B4B0027F5E9 /* search_press@2x.png */; };
 		2F6F8D491C647DCF0027F5E9 /* 1159.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F6F8D371C647DCF0027F5E9 /* 1159.png */; };
@@ -37,6 +39,7 @@
 		2FE0B7081C6341D400BEB580 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FE0B7061C6341D400BEB580 /* LaunchScreen.storyboard */; };
 		2FE0B7131C6341D400BEB580 /* ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FE0B7121C6341D400BEB580 /* ExampleTests.m */; };
 		2FE0B71E1C6341D400BEB580 /* ExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FE0B71D1C6341D400BEB580 /* ExampleUITests.m */; };
+		CB39CBCF9BED40E6F013B529 /* libPods-Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2BFFBF607BADC9ED9425809 /* libPods-Example.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,10 +60,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1867F7F41C72335A000B7793 /* GregBackgroundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GregBackgroundViewController.h; sourceTree = "<group>"; };
+		1867F7F51C72335A000B7793 /* GregBackgroundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GregBackgroundViewController.m; sourceTree = "<group>"; };
 		1898B1D91C65D6B0004D2E16 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		1898B1DA1C65D6B0004D2E16 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		1898B1DC1C65D6BD004D2E16 /* SelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectViewController.h; sourceTree = "<group>"; };
 		1898B1DD1C65D6BD004D2E16 /* SelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectViewController.m; sourceTree = "<group>"; };
+		18FD6C3E1C84A91000B9BF44 /* FirstWebViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstWebViewC.h; sourceTree = "<group>"; };
+		18FD6C3F1C84A91000B9BF44 /* FirstWebViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstWebViewC.m; sourceTree = "<group>"; };
 		2F6F8D321C6443C50027F5E9 /* TopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopView.h; sourceTree = "<group>"; };
 		2F6F8D331C6443C50027F5E9 /* TopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopView.m; sourceTree = "<group>"; };
 		2F6F8D351C644B4B0027F5E9 /* search_press@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search_press@2x.png"; sourceTree = "<group>"; };
@@ -99,6 +106,9 @@
 		2FE0B7191C6341D400BEB580 /* ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FE0B71D1C6341D400BEB580 /* ExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleUITests.m; sourceTree = "<group>"; };
 		2FE0B71F1C6341D400BEB580 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BCC4FDFB78F51326A38E13D /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		95A3C615826F56B45A700FCD /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
+		A2BFFBF607BADC9ED9425809 /* libPods-Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB39CBCF9BED40E6F013B529 /* libPods-Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +170,8 @@
 				2FE0B7111C6341D400BEB580 /* ExampleTests */,
 				2FE0B71C1C6341D400BEB580 /* ExampleUITests */,
 				2FE0B6F61C6341D400BEB580 /* Products */,
+				38EB032BCC18F9B10004193A /* Pods */,
+				7D633EDB7C8BD51F23A950F5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -179,6 +192,10 @@
 				2FE0B6FC1C6341D400BEB580 /* AppDelegate.m */,
 				2FE0B6FE1C6341D400BEB580 /* ViewController.h */,
 				2FE0B6FF1C6341D400BEB580 /* ViewController.m */,
+				18FD6C3E1C84A91000B9BF44 /* FirstWebViewC.h */,
+				18FD6C3F1C84A91000B9BF44 /* FirstWebViewC.m */,
+				1867F7F41C72335A000B7793 /* GregBackgroundViewController.h */,
+				1867F7F51C72335A000B7793 /* GregBackgroundViewController.m */,
 				1898B1D91C65D6B0004D2E16 /* MainViewController.h */,
 				1898B1DA1C65D6B0004D2E16 /* MainViewController.m */,
 				1898B1DC1C65D6BD004D2E16 /* SelectViewController.h */,
@@ -222,6 +239,23 @@
 			path = ExampleUITests;
 			sourceTree = "<group>";
 		};
+		38EB032BCC18F9B10004193A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8BCC4FDFB78F51326A38E13D /* Pods-Example.debug.xcconfig */,
+				95A3C615826F56B45A700FCD /* Pods-Example.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7D633EDB7C8BD51F23A950F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2BFFBF607BADC9ED9425809 /* libPods-Example.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -229,9 +263,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2FE0B7221C6341D400BEB580 /* Build configuration list for PBXNativeTarget "Example" */;
 			buildPhases = (
+				B9A69D69E655C3073D12B7AF /* Check Pods Manifest.lock */,
 				2FE0B6F11C6341D400BEB580 /* Sources */,
 				2FE0B6F21C6341D400BEB580 /* Frameworks */,
 				2FE0B6F31C6341D400BEB580 /* Resources */,
+				ED5D95EB92533E3C096E082F /* Embed Pods Frameworks */,
+				92B17E94F98FF7996BE37577 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -368,6 +405,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		92B17E94F98FF7996BE37577 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Example/Pods-Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9A69D69E655C3073D12B7AF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ED5D95EB92533E3C096E082F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Example/Pods-Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2FE0B6F11C6341D400BEB580 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -378,6 +463,8 @@
 				2FE0B6FD1C6341D400BEB580 /* AppDelegate.m in Sources */,
 				2F6F8D341C6443C50027F5E9 /* TopView.m in Sources */,
 				2FE0B6FA1C6341D400BEB580 /* main.m in Sources */,
+				18FD6C401C84A91000B9BF44 /* FirstWebViewC.m in Sources */,
+				1867F7F61C72335A000B7793 /* GregBackgroundViewController.m in Sources */,
 				1898B1DB1C65D6B0004D2E16 /* MainViewController.m in Sources */,
 				2F6F8D601C6490DA0027F5E9 /* MyCollectionViewCell.m in Sources */,
 			);
@@ -518,6 +605,7 @@
 		};
 		2FE0B7231C6341D400BEB580 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BCC4FDFB78F51326A38E13D /* Pods-Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Example/Info.plist;
@@ -529,6 +617,7 @@
 		};
 		2FE0B7241C6341D400BEB580 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95A3C615826F56B45A700FCD /* Pods-Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Example/Info.plist;

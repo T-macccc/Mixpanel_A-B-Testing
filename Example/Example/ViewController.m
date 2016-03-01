@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "TopView.h"
 #import "MyCollectionViewCell.h"
+#import "FirstWebViewC.h"
 
 @interface ViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 @property (strong,nonatomic)UICollectionView *collectionView;
@@ -18,33 +19,10 @@
 {
     NSArray *imageArray;
     NSArray *nameArray;
+    NSArray *urlArray;
+    UIView *helpView;
+    UIButton *backButton;
 }
-
-//-(instancetype)init{
-//    imageArray = [NSArray array];
-//    nameArray = [NSArray array];
-//    
-//    UIImage *image1 = [UIImage imageNamed:@"1159.png"];//腾讯
-//    UIImage *image2 = [UIImage imageNamed:@"1160.png"];//百度
-//    UIImage *image3 = [UIImage imageNamed:@"1165.png"];//赶集
-//    UIImage *image4 = [UIImage imageNamed:@"1167.png"];//新浪微博
-//    UIImage *image5 = [UIImage imageNamed:@"1169.png"];//新浪
-//    UIImage *image6 = [UIImage imageNamed:@"1704.png"];//搜房网
-//    UIImage *image7 = [UIImage imageNamed:@"1862.png"];//一号店
-//    UIImage *image8 = [UIImage imageNamed:@"1985.png"];//搜狗
-//    UIImage *image9 = [UIImage imageNamed:@"1996.png"];//58
-//    UIImage *image10 = [UIImage imageNamed:@"2011.png"];//京东
-//    UIImage *image11 = [UIImage imageNamed:@"2173.png"];//苏宁
-//    UIImage *image12 = [UIImage imageNamed:@"2474.png"];//唯品会
-//    UIImage *image13 = [UIImage imageNamed:@"2790.png"];//大众点评
-//    UIImage *image14 = [UIImage imageNamed:@"3301.png"];//途牛
-//    UIImage *image15 = [UIImage imageNamed:@"fh.png"];//凤凰
-//    UIImage *image16 = [UIImage imageNamed:@"3940.png"];//美团
-//    
-//    imageArray = @[image1,image2,image3,image4,image5,image6,image7,image8,image9,image10,image11,image12,image13,image14,image15,image16];
-//    nameArray = @[@"腾讯",@"百度",@"赶集",@"新浪微博",@"新浪",@"搜房网",@"一号店",@"搜狗",@"58",@"京东",@"苏宁",@"唯品会",@"大众点评",@"途牛",@"凤凰",@"美团"];
-//    return self;
-//}
 
 -(void)arrayinit{
     imageArray = [NSArray array];
@@ -69,6 +47,7 @@
     
     imageArray = @[image1,image2,image3,image4,image5,image6,image7,image8,image9,image10,image11,image12,image13,image14,image15,image16];
     nameArray = @[@"腾讯",@"百度",@"赶集",@"微博",@"新浪",@"搜房网",@"一号店",@"搜狗",@"58",@"京东",@"苏宁",@"唯品会",@"大众点评",@"途牛",@"凤凰",@"美团"];
+    urlArray = @[@"http://www.qq.com",@"www.baidu.com",@"www.ganji.com",@"www.weibo.com",@"www.sina.com",@"fang.com",@"www.yhd.com",@"www.sougou.com",@"www.58.com",@"www.JD.com",@"www.suning.com",@"vip.com",@"dianping.com",@"www.tuniu.com",@"www.ifeng.com",@"www.meituan.com"];
 }
 
 - (void)viewDidLoad {
@@ -163,7 +142,23 @@
 }
 
 -(void)methodThree{
-    NSLog(@"three");
+    
+    helpView = [[UIView alloc]init];
+    CGRect viewRcet = CGRectMake(0, self.view.frame.size.height*0.618, self.view.frame.size.width, self.view.frame.size.height*0.382);
+    helpView.frame = viewRcet;
+    helpView.backgroundColor = [UIColor yellowColor];
+    
+    [self.view addSubview:helpView];
+    
+    backButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [backButton setTitle:@"back" forState:UIControlStateNormal];
+    [backButton setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
+    CGRect buttonRect = CGRectMake((self.view.frame.size.width-100)/2.0, self.view.frame.size.height-60, 100, 60);
+    backButton.frame = buttonRect;
+    
+    [backButton addTarget:self action:@selector(methodDismiss) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.view addSubview:backButton];
 }
 
 -(void)methodFour{
@@ -172,6 +167,11 @@
 
 -(void)methodFive{
     NSLog(@"five");
+}
+
+-(void)methodDismiss{
+    helpView.frame = CGRectZero;
+    backButton.frame = CGRectZero;
 }
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
@@ -198,6 +198,13 @@
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     UICollectionViewCell *cell = (UICollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
     cell.backgroundColor = [UIColor whiteColor];
+    
+    NSString *urlStr = urlArray[indexPath.row];
+    NSLog(@"indexPath:%ld",(long)indexPath.row);
+    FirstWebViewC *ViewController = [FirstWebViewC new];
+    ViewController.urlName = urlStr;
+    NSLog(@"%@,%@",urlStr,ViewController.urlName);
+    [self presentViewController:ViewController animated:YES completion:nil];
 }//选中时调用方法
 
 -(BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath{
